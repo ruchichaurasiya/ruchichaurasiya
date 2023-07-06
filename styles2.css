@@ -1,0 +1,49 @@
+.skills .box
+{
+position:relative;
+width:100%;
+display:grid;
+grid-template-columns:150px 1fr;
+justify-content:center;
+align-items:center;
+}
+.skills .box h4
+{
+
+color:black;
+font-weight:500;
+}
+.skills .box .percent
+{
+position:relative;
+width:90%;
+height:10px;
+background:#f0f0ff;
+}
+.skills .box .percent div
+{
+position:absolute;
+top:0;
+left:0;
+height:100%;
+background:lightgreen;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+button {     
+        width: 60%;  
+        color: #1CD828;   
+        padding: 10px;   
+        margin: 10px 0px;    
+        cursor: pointer;
+display:none;
+       }   

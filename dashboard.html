@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login dashboard</title>
+<!--custom css-->
+</head>
+<link rel="stylesheet" href="styles1.css">
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="scripts.js"></script>
+<body>
+<div class="grid-container">
+<header class="header">
+<div class="menu-icon" onclick="openSidebar()">
+<span class="material-icons-outlined">menu</span>
+</div>
+
+<div class="header-left">
+<span class="material-icons-outlined">search</span>
+<button type="button" class="click" onclick="document.getElementById('demo').innerHTML = Date()">Click to display Date and time.</button>
+<p id="demo"></p>
+
+</div>
+<div class="header-right">
+<span class="material-icons-outlined">notifications</span>
+<span class="material-icons-outlined">email</span>
+<span class="material-icons-outlined">account_circle</span>
+</div>
+</header>
+<aside id="sidebar">
+<div class="sidebar-title">
+<div class="sidebar-brand">
+<span class="material-icons-outlined">inventory</span>Player's Dashboard
+</div>
+<span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+</div>
+<ul class="sidebar-list">
+<li class="sidebar-list-item">
+<span class="material-icons-outlined">dashboard</span>Dashboard
+</li>
+<li><button onclick="myFunction()">Logout</button></a>
+<script>
+function myFunction() {
+  location.replace("./login(1).html")
+}
+</script>
+</li>
+</ul>
+</aside>
+
+<main class="main-container">
+<div class="main-title">
+<p class="font-weight-bold" style="font-size:20px;">Daily Activities</p>
+</div>
+<div class="main-cards">
+
+<div class="card">
+<div class="card-inner">
+<p class="text-primary">EQUIPMENTS USED</p>
+<span class="material-icons-outlined">fitness_center</span>
+</div>
+<span class="text-primary font-weight-bold">12</span>
+</div>
+
+
+<div class="card">
+<div class="card-inner">
+<p class="text-primary">Running</p>
+<span class="material-icons-outlined">directions_run</span>
+</div>
+<span class="text-primary font-weight-bold">5km/day</span>
+</div>
+
+<div class="card">
+<div class="card-inner">
+<p class="text-primary">Practice</p>
+<span class="material-icons-outlined">sports_cricket</span>
+</div>
+<span class="text-primary font-weight-bold">2hr/day</span>
+</div>
+</div>
+
+
+<div class="charts">
+
+<div class="charts-card">
+<p class="chart-title">Top 5 performance in Tournaments</p>
+<div id="bar-chart">
+
+<canvas id="myChart" style="width:20%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Bowling", "Batting", "fielding", "wicket-keeping", "Captaincy"];
+var yValues = [55, 49, 52, 24, 18];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      
+    }
+  }
+});
+</script>
+
+
+</div>
+</div>
+<div class="charts-card">
+<p class="chart-title">Improvement</p>
+<div id="area-chart">
+
+<div class="about skills">
+<div class="box">
+<h4>Batting</h4>
+<div class="percent">
+<div style="width:90%;"></div>
+</div>
+</div>
+<div class="box">
+<h4>Bowling</h4>
+<div class="percent">
+<div style="width:80%;"></div>
+</div>
+</div>
+
+<div class="box">
+<h4>Wicket-Keeping</h4>
+<div class="percent">
+<div style="width:74%;"></div>
+</div>
+</div>
+
+<div class="box">
+<h4>Fielding</h4>
+<div class="percent">
+<div style="width:82%;"></div>
+</div>
+</div>
+<div class="box">
+<h4>Captaincy</h4>
+<div class="percent">
+<div style="width:67%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body>
+</html>

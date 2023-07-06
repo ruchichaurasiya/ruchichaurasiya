@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Page Slide</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+  var w = $(window).width();
+  var h = $(window).height();
+  var slides = $('.Slides > div');
+  $('.SlideContainer').css({ height: (h-60) + 'px' });
+  $('.Slides').css({ width: slides.length + '00%' });
+  slides.css({ width: w + 'px' });
+
+  var pos = 0;
+
+  $('.Left').click(function(){
+    pos--;
+    $('.Slides').animate({ left: (pos * w) + 'px' });
+  });
+  $('.Right').click(function(){
+    pos++;
+    $('.Slides').animate({ left: (pos * w) + 'px' });
+  });
+
+});
+
+</script>
+
+<style type="text/css">
+
+body { margin: 0;
+ padding: 0;
+ background-color:wheat;
+ }
+
+.Header { position: absolute; left: 0; top: 0; width: 100%; height: 30px; line-height: 30px; text-align: center; background: #000; color: #fff; }
+.Footer { position: absolute; left: 0; bottom: 0; width: 100%; height: 30px; line-height: 30px; text-align: center; background: #000; color: #fff; }
+
+.SlideContainer { position: absolute; left: 0; top: 30px; width: 100%; overflow: hidden; }
+.Slides { position: absolute; left: 0; top: 0; height: 100%; }
+.Slides > div { float: left; height: 100%; overflow: scroll; }
+
+.Slides .Content { margin-top: 100px; text-align: center; }
+.Slides .Content a { font-size: 30px; }
+h1{
+color:red;
+}
+h2{
+color:green;
+}
+th{
+color:blue;
+
+}
+td{
+color:brown
+}
+h3{
+color:crimson
+}
+table, th, td {
+
+border: 1px solid black;
+
+}
+ul{
+list-style:none;
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="Header">
+  STEP TO APPLY
+</div>
+
+<div class="SlideContainer">
+  <div class="Slides">
+
+
+
+    <div class="Slide">
+      <div class="Content">
+
+        <h1>STEP1</h1>
+        <h2>REGISTER HERE</h2>
+        <a href="#" class="Left">&laquo;</a>
+      <p><h3>The process to admit our club is relatively easy and can be done through its online website.The candidate can get started right away by completing the 1st step to apply,i.e. registration,by clicking on the 'Registration Now'tab.n the registration form, the candidates are required to fill in simple details such as name, country, date of birth, mobile number and email ID. Please note, while registering, the candidates also need to create passwords for future login. The email Id and the password created at this step become the login credential of the students and they should note it for future reference. Any student who is in pursuit of practical knowledge, 360-degree development should register themselves with in our club to learn, thrive and explore.</p></h3>
+<img src="C:\Users\DELL\Downloads\WhatsApp Image 2023-06-21 at 8.41.02 PM.jpeg" width=400 height=200>
+
+      </div>
+    </div>
+
+    <div class="Slide">
+      <div class="Content">
+
+        <h1>STEP 2</h1>
+        <h2>PLAN YOUR BUDGET</h2>
+        <a href="#" class="Left">&laquo;</a>
+        <a href="#" class="Right">&raquo;</a>
+<p><h3>Choose your budget and come to our club.</p></h3>
+<table style="width:100%" border:2px>
+  <tr>
+    <th>WEEKEND(PER YEAR)</th>
+    <th>FULL YEAR(PER YEAR) </th> 
+    <th>MONTHLY(PER MONTH)</th>
+  </tr>
+  <tr>
+    <td>ALL SATURDAY& SUNDAY-$22000</td>
+    <td>7 DAYS-$29,500</td>
+    <td>ONE SESSION-$11000</td>
+  </tr>
+  <tr>
+    <td>SUNDAYS-$15000</td>
+    <td>5 DAYS-$22,500</td>
+    <td>TWO SESSION-17000</td>
+  </tr>
+  <tr>
+    <td>NIGHT SESSION-$28000</td>
+    <td>WEEKEND-$12000</td>
+    <td>FULL PROGRAM-$20000</td>
+  </tr>
+</table>
+<img src="C:\Users\DELL\Downloads\WhatsApp Image 2023-06-20 at 11.00.19 PM.jpeg">
+
+      </div>
+    </div>
+
+    <div class="Slide">
+      <div class="Content">
+        <h1>STEP 3</h1>
+       <h2>SUBMIT APPLICATION</h2>
+<a href="#" class="Right">&raquo;</a>
+<p><h3>Once the candidatess have registered themselves , the next step is completing the application and submitting it. The process of application filling is the most significant step as the candidates are required to fill in their preferences in disciplines, institutes and courses.</h3>
+
+  <ul>
+  <li><a href="Basic information">Basic information</a></li>
+
+<p><h3>In the first section, candidates are required to fill in simple yet important details such as official name, contact number, address. Please note that all the details provided by the students in this section should be correct and must be the same as mentioned in their passports or government IDs.</p></h3></ul>
+ <ul><li><a href="EXPERIENCE CERTIFICATE">EXPERIENCE</a></li>
+<p><h3>If you have any experience or paricipating any sports event youa have to upload the file and you will get a bumper offer for admission.</p></h3></ul>
+<img src="C:\Users\DELL\Downloads\WhatsApp Image 2023-06-20 at 11.00.18 PM.jpeg">
+<img src="C:\Users\DELL\Downloads\WhatsApp Image 2023-06-20 at 11.00.18 PM (2).jpeg">
+</div>
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+
+<div class="Footer">
+  Royal Rhinos Club 
+</div>
+
+</body>
+</html>

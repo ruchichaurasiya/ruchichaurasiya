@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.navbar {
+  width:82%;
+justify-content: flex-end;
+  background-color: black ;
+justify-content: space-evenly;
+align:right;
+}
+.navbar a {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+
+}
+.bg-img {
+  background-image: url(https://media.istockphoto.com/id/1255328634/photo/cricket-leather-ball-resting-on-bat-on-the-stadium-pitch.jpg?s=612x612&w=0&k=20&c=e2yHkZt3DISv6e1dpkZgABgC9fxfY93cB1H4MdY9sJs=);
+  min-height: 75em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+#mydiv{
+justify-content: space-evenly;
+display: flex;
+position:relative;
+}
+.navbar a:hover {
+ background-color: #ffcc00;
+}
+p.facts{
+font-size:50px;
+font-style:italic;
+font-family:"Lucida Handwriting",Cursive;
+padding-left:200px;
+margin-top:100px;
+color: #ffcc00;
+}
+p.welcome{
+font-size:50px;
+font-style:italic;
+font-family:"Lucida Handwriting",Cursive;
+padding-left:100px;
+padding-top:50px;
+color:black;
+letter-spacing:15px;
+}
+.logo{
+padding-left:10px;
+float:right;
+border-radius:50%;
+}
+h1{
+padding-left:30px;
+color:#ffcc00;
+padding-top:100px;
+
+}
+.a{
+font-size:23px;
+color:black;
+text-align:left;
+padding-left:30px;
+padding-right:30px;
+}
+.quote{
+
+font-size:60px;
+font-style:italic;
+font-family:"Times New Roman",serif;
+padding-left:100px;
+padding-right:100px;
+padding-top:150px;
+color:MidnightBlue;
+padding-top:100px;
+}
+.column{
+float:left;
+width:50%;
+padding:50px;
+height:400px;
+}
+.row:after {
+content:"";
+display:table;
+clear:both;
+}
+
+
+.links {
+  background-color: lightgrey;
+  width: 50%;
+height:400px;
+padding:50px;
+}
+.right {
+  background-color: lightgrey;
+  width: 50%;
+height:400px;
+padding:100px;
+float:right;
+}
+
+h2{
+color:#ffcc00;
+}
+footer {
+  text-align: center;
+  background-color:black;
+  color: white;
+}
+
+#demo{
+float:right;
+color:white;
+}
+.quotea{
+font-size:30px;
+font-family:"Times New Roman",serif;
+font-style:italic;
+padding-left:100px;
+padding-right:100px;
+padding-top:150px;
+color:MidnightBlue;
+padding-top:100px;
+}
+.video{
+padding-top:5px;
+padding-right:20px;
+padding-bottom:55px;
+}
+
+.reference ul
+{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+}
+.reference ul li
+{
+list-style:none;
+color:white;
+font-weight:500;
+}
+
+input[type=button] {
+  width: 120px;
+  height: 60px;
+  margin-left: 35px;
+  background-color: black;
+  color: white;
+  border: none;
+outline:none;
+}
+
+@media only screen and (max-width:1140px){
+#mydiv{
+flex-direction:column;
+}
+.navbar{
+flex-direction:column;
+}
+}
+
+
+</style>
+<body>
+<div class="bg-img">
+<div class="navbar" id="mydiv">
+  <a href="file:///C:/Users/DELL/Downloads/abt.html#">About</a> 
+  <a href="file:///C:/Users/DELL/Downloads/reason%20to%20join(2).html">Reason to Join</a>
+  <a href="file:///C:/Users/DELL/Downloads/step%20to%20apply%20new2.html#">How to Apply</a> 
+  <a href="file:///C:/Users/DELL/Downloads/blog.html">Blogs</a> 
+  <a href="file:///C:/Users/DELL/Downloads/try.html">Join us</a>
+  <a href="file:///C:/Users/DELL/Downloads/feedback%20NEW.html">Feedback</a>
+<button type="button" class="click" onclick="document.getElementById('demo').innerHTML = Date()">Click to display Date and time.</button>
+<p id="demo"></p>
+</div>
+<img class="logo" src="data:image/jpeg;base64,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" alt="logo" width="200" height="200">
+
+<center><p class="facts">HUSTLE TILL<br> YOUR LAST BREATHE</br></p></center>
+<h1>Powering The<br> Recreational Game</br></h1>
+<p class="a">Cricket tops the list when it comes to favourite sports of India. The craze is so much so that some of the Indian cricketers such as Sachin Tendulkar and Saurav Ganguly are literally worshipped in our country. A marble statue of Sachin Tendulkar has been set up in a village in Bihar and it is addressed as the God of cricket.</p>
+<center><p class="quote">"Everyone has the fire, but the champions know when to ignite the spark"</p></center>
+</div>
+
+<div class="row">
+<div class="column" style="background-color:lightgrey;">
+<center><p>Welcome to our club</p><a href="file:///C:/Users/DELL/Downloads/abt.html#">Click to know more about us</a><br><br>
+<a href="file:///C:/Users/DELL/Downloads/reason%20to%20join(2).html">Click to know why to join</a><br><br>
+<img src="C:\Users\DELL\Downloads\about.jpg" alt="about" width="300" height"200"></center>
+</div>
+<div class="column" style="background-color:white;">
+<center><p class="quotea">"If you train hard,<br> winning is easy." &#128170</br></center>
+</div>
+</div>
+
+<div class="row">
+<div class="column" style="background-color:white;">
+<center><p class="quotea" style="color:red;">"The only one who can tell you 'you can't win' is you and you don't have to listen."&#128585</br></center>
+</div>
+<div class="column" style="background-color:black;">
+<center><p style="color:white;">Wanna Join our club but unaware about the procedure</p><a href="file:///C:/Users/DELL/Downloads/step%20to%20apply%20new2.html#">How to Join Read more...</a><br><br>
+<img src="C:\Users\DELL\Downloads\about.jpg" alt="about" width="300" height"300"></center>
+</div>
+</div>
+
+<div class="row">
+<div class="column" style="background-color:#ffcc00;">
+<center><p>Register to our page to know more about us</p><a href="file:///C:/Users/DELL/OneDrive/Documents/registration.html">Click here to Sign up...</a><br><br>
+<img src="C:\Users\DELL\Downloads\about.jpg" alt="about" width="300" height"300"></center>
+</div>
+<div class="column" style="background-color:white;">
+<center><p class="quotea" style="color:red;">"We don't want to tell our dreams, we want to show them."	&#128079</br></center>
+</div>
+</div>
+
+<div class="row">
+<div class="column" style="background-color:white;">
+<center><p class="quotea">"Just believe in yourself. Even if you don't, pretend that you do and, at some point, you will."&#128578</br></center>
+</div>
+<div class="column" style="background-color:lightgrey;">
+<center><p>Sign in to know your progress and activity</p><a href="file:///C:/Users/DELL/Downloads/login%20(1).html">Login to your dashboard</a><br><br>
+<img src="C:\Users\DELL\Downloads\about.jpg" alt="about" width="300" height"300"></center>
+</div>
+</div>
+
+
+<div class="row">
+<div class="column">
+<center><iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/NpiYFRKTbDU" title="ZERO TO HERO - Rohit Sharma Motivational Video | Hitman | 1 Minute Motivation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+</div>
+<div class="column">
+<iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/J0Ep6ZlqA9k" title="UNSTOPPABLE - Motivational Video | Virat Kohli Motivation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div>
+
+<footer>
+<div class="about reference">
+<ul>
+<li>
+<b><h2>Contacts</h2></b>
+<p>bl.en.u4cse22278@bl.students.amrita.edu</p>
+<p><a href="mailto:bl.en.u4cse22278@bl.students.amrita.edu">Send mail..</a></p>
+<p>Click below number to call a customer support</p>
+<p><a href="tel:8084568141">8084568141</a></p>
+</li>
+<li>
+<h2>Location</h2>
+<p>Narayani stadium</p>
+<p>Near to Terai hospital</p>
+<p><a href="https://goo.gl/maps/Qv5BAMRDP5aMB1wz7">Click to Open map</a></p>
+</li>
+</ul>
+</div>
+<p style="font-size:16px; color:gray;"> Copyright &copy; 2028 www.pioneer flyers.com-All rights reserved</p></center>
+</footer>
+</body>
+</html>
